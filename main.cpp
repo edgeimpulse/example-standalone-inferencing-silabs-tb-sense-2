@@ -21,10 +21,6 @@
  */
 
 /* Include ----------------------------------------------------------------- */
-#include "model_metadata.h"
-#include "ei_classifier_types.h"
-#include "dsp/numpy_types.h"
-#include "ei_classifier_porting.h"
 #include "ei_run_classifier.h"
 
 /* Silicon Labs board init functions --------------------------------------- */
@@ -37,7 +33,6 @@ extern "C" void RETARGET_SerialInit(void);
 static const float features[] = {
     // copy raw features here (for example from the 'Live classification' page)
     // see https://docs.edgeimpulse.com/docs/running-your-impulse
-
 };
 
 int raw_feature_get_data(size_t offset, size_t length, float *out_ptr) {

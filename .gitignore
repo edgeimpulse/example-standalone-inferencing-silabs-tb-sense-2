@@ -1,5 +1,8 @@
 GNU ARM v7.2.1 - Default/
-edge-impulse-sdk/
-model-parameters/
-tflite-model/
-utensor-model/
+edgeimpulse/edge-impulse-sdk/
+edgeimpulse/model-parameters/
+edgeimpulse/tflite-model/
+edgeimpulse/utensor-model/
+build/
+ei-workspace/
+slc_cli/

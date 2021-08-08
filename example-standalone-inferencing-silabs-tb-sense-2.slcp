@@ -15,12 +15,15 @@ include:
   file_list:
   - {path: dsp_blocks.h, folder: edgeimpulse/model-parameters}
   - {path: model_metadata.h, folder: edgeimpulse/model-parameters}
-# comment the following 2 lines when EI_CLASSIFIER_HAS_ANOMALY is 0 in model_metadata.h
+# The following 2 files may not exist. Comment the lines accordingly.
   - {path: anomaly_clusters.h, folder: edgeimpulse/model-parameters}
   - {path: anomaly_types.h, folder: edgeimpulse/model-parameters}
 - path: edgeimpulse/tflite-model
   file_list:
+# The following 3 files may not exist. Comment the lines accordingly.
   - {path: trained_model_compiled.h, folder: edgeimpulse/tflite-model}
+  #- {path: tflite-resolver.h, folder: edgeimpulse/tflite-model}
+  #- {path: tflite-trained.h, folder: edgeimpulse/tflite-model}
 - path: edgeimpulse/edge-impulse-sdk/porting
   file_list:
   - {path: ei_classifier_porting.h, folder: edgeimpulse/edge-impulse-sdk/porting}
@@ -272,7 +275,9 @@ source:
 - {path: main.c}
 - {path: app.c}
 - {path: ei_main.cpp}
+# The following 2 files may not exist. Comment the lines accordingly.
 - {path: edgeimpulse/tflite-model/trained_model_compiled.cpp, folder: edgeimpulse/tflite-model}
+#- {path: edgeimpulse/tflite-model/tflite-trained.cpp, folder: edgeimpulse/tflite-model}
 - {path: brd4166a/rgbled.c, folder: brd4166a}
 - {path: edgeimpulse/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_abs_f16.c, folder: edgeimpulse/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions}
 - {path: edgeimpulse/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_abs_f32.c, folder: edgeimpulse/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions}
@@ -957,6 +962,7 @@ define:
 - {name: EFR32MG12P332F1024GL125, value: 1}
 toolchain_settings:
 - {value: -Wno-unused-parameter, option: gcc_compiler_option}
+- {value: -Wno-missing-field-initializers, option: gcc_compiler_option}
 ui_hints:
   highlight:
   - {path: README.md, focus: true}

@@ -1,0 +1,16 @@
+#CRC Codes for initially generated config files -- do not modify!
+#Thu Aug 26 13:50:45 GMT 2021
+mbedtls_config.h=384290189
+sl_device_init_lfxo_config.h=-802871145
+sl_sleeptimer_config.h=-1074849105
+sl_device_init_dcdc_config.h=540536968
+app_assert_config.h=1717687323
+sl_device_init_emu_config.h=1414330218
+sl_simple_rgbw_pwm_led_led_rgb_config.h=-2072635199
+emlib_core_debug_config.h=171843933
+sl_mx25_flash_shutdown_usart_config.h=-745910381
+sl_device_init_hfxo_config.h=999828789
+psa_crypto_config.h=-715200899
+sl_board_control_config.h=-367183888
+sl_memory_config.h=448518509
+sl_iostream_usart_vcom_config.h=1461939972

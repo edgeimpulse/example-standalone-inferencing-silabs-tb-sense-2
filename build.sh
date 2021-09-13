@@ -77,7 +77,6 @@ if [ "$COMMAND" == "--build" ]; then
     echo "Building "${FILE}"..."
     download-dependencies
     prepare-workspace ${WORKSPACE}
-    prepare-slcp
     cd ${WORKSPACE} && make -j -f *.Makefile
 elif [ "$COMMAND" == "--update" ]; then
     echo "Updating workspace..."

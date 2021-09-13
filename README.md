@@ -68,7 +68,7 @@ Then, follow the build instructions for your environment below.
 1. Double-click on `example-standalone-inferencing-silabs-tb-sense-2.slcp` to show the Simplicity Configurator.
 1. Edit 'Project Generators' and disable 'IARM EMBEDDED WORKBENCH PROJECT':
 
-    ![Disable IAR](images/disable-iar.png)
+    ![Disable IAR](images/no-iar.png)
 
 1. Click **Force Generation** to regenerate all links and include paths.
 

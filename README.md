@@ -70,7 +70,7 @@ Then, follow the build instructions for your environment below.
 
     ![Disable IAR](images/disable-iar.png)
 
-1. Click **Force Generate** to regenerate all links and include paths.
+1. Click **Force Generation** to regenerate all links and include paths.
 
     ![Force generation](images/project-details.png)
 
